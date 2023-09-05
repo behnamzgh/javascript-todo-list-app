@@ -37,7 +37,7 @@ header {
   justify-content: flex-start;
 }
 
-.form-input {
+.form-container {
   display: flex;
 }
 
@@ -134,4 +134,9 @@ select {
   padding: 1rem;
   color: var(--primaryColor);
   pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }

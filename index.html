@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -22,19 +23,20 @@
     <section class="container">
       <!-- input -->
       <div class="form-input">
-        <input type="text" placeholder="Note" />
-        <button class="task-button" type="submit">
-          <i class="fas fa-plus-circle"></i>
-        </button>
-      </div>
-
-      <!-- options -->
-      <div class="select">
-        <select class="task-filter" name="" id="">
-          <option value="all">All</option>
-          <option value="completed">Completed</option>
-          <option value="uncompleted">Uncompleted</option>
-        </select>
+        <form>
+          <input type="text" placeholder="Note" />
+          <button class="task-button" type="submit">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+        </form>
+        <!-- options -->
+        <div class="select">
+          <select class="task-filter" name="" id="">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
       </div>
 
       <!-- tasks -->
@@ -44,5 +46,7 @@
         <span><i class="fa-solid fa-trash-can"></i></span>
       </div>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
